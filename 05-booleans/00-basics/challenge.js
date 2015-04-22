@@ -39,6 +39,6 @@ module.exports.nameAndPrice = function(name, price) {
   
   return false;
   */
-  // single line
-  return ((name === 'NYTimes' || name === 'LATimes') && ( price >= 1));
+  // single line 
+  return (name === 'NYTimes' || name === 'LATimes') && ( price >= 1);
 };
