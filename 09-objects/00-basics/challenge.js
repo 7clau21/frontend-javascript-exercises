@@ -1,7 +1,33 @@
-module.exports.createCourse = undefined;
+ module.exports.createCourse = function (title, duration, students) {
+   course = {
+     title: title,
+     duration: duration,
+     students: students
+   };
 
-module.exports.addProperty = undefined;
+   return course;
+   
+ }
 
-module.exports.formLetter = undefined;
+module.exports.addProperty = function(object, newProp, newValue) {
+ /*if (object[newProp] === undefined) {
+    object[newProp] = newValue;
+  }
+  return object;*/
+  object = {};
+  object.property = newProp;
+  object.value = newValue;
+  return object;
+};
 
-module.exports.canIGet = undefined;
+
+
+module.exports.formLetter = function(letter) {
+return "Hello " + letter.recipient + ",\n\n" + letter.msg + "\n\nSincerely,\n" + letter.sender;
+}
+
+    
+
+module.exports.canIGet = function (item, money) {
+  
+};
